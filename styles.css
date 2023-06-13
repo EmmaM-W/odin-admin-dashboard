@@ -12,7 +12,7 @@ body{
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 200px 1fr;
 }
 
 .header {
@@ -151,23 +151,41 @@ body{
 
 .projectsContainer {
     margin-left: 25px;
+    margin-bottom: 25px;
     grid-column: 1;
     grid-row: span 2;
 }
 
+.projects{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.projectCard {
+    width: 300px;
+}
+.projectCard svg {
+    height: 25px;
+    width: auto;
+}
+.iconContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
 .announcementsContainer {
-    margin: 20px;
+    margin: 0px 20px;
     grid-column: 2;
     grid-row: 1;
 }
 
 .trendingContainer {
-    margin: 20px;
+    margin: 0px 20px;
     grid-column: 2;
     grid-row: 2;
 }
 
-.trending , .announcements {
+.trending , .announcements , .projectCard {
     background-color: white;
     padding: 10px;
     border-radius: 5px;
@@ -178,7 +196,7 @@ body{
     gap:  10px;
     line-height: 5px;
 }
-.trender p , .announcements p {
+.trender p , .announcements p , .projectCard p {
     color: var(--sidebar-text);
 }
 

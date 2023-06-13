@@ -1,0 +1,76 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: cadetblue;
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.searchbar {
+    background-color: grey;
+}
+.userProfile {
+    background-color: silver;
+}
+
+.welcomeMessage {
+    background-color: pink;
+}
+
+.headerButtons {
+    background-color: crimson;
+}
+.sidebar {
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(3,1fr);
+    background-color: blue;
+
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.sidebarContent {
+    background-color: aquamarine;
+}
+
+.mainContent {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    
+    background-color: beige;
+
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.projectsContainer {
+    background-color: whitesmoke;
+
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.announcements {
+    background-color: salmon;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trending {
+    background-color: burlywood;
+    grid-column: 2;
+    grid-row: 2;
+}
+

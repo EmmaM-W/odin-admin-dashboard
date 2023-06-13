@@ -3,7 +3,11 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
-
+svg {
+    fill: #9ca3af;
+    height: 50px;
+    width: auto;
+}
 .header {
     display: grid;
     gap: 5px;
@@ -33,8 +37,8 @@
     display: grid;
     gap: 50px;
     grid-template-rows: 100px repeat(2,1fr);
-    background-color: blue;
-    color: white;
+    background-color: #111827;
+    color: #9ca3af;
     grid-column: 1;
     grid-row: 1 / 3;
 }
@@ -43,15 +47,20 @@
     align-items: center;
     gap: 10px;
 }
+.sidebarContent svg {
+    height: 25px;
+    width: auto;
+    fill: #9ca3af;
+}
+
 .logo {
     display: flex;
-    color: white;
 
 }
 .sidebarContent {
     margin: 20px;
     display: grid;
-    border-top: 1px white solid;
+    border-top: 1px #9ca3af groove;
     grid-template-rows: repeat(auto-fill, minmax(50px,1fr));
 }
 

@@ -71,12 +71,10 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    line-height: 5px;
 }
 
-.textContent {
-    display: flex;
-    flex-direction: column;
+.textContainer p {
+    line-height: 1px;
 }
 
 .headerButtons {

@@ -3,11 +3,7 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
-svg {
-    fill: #9ca3af;
-    height: 50px;
-    width: auto;
-}
+
 .header {
     display: grid;
     gap: 5px;
@@ -39,6 +35,7 @@ svg {
     grid-template-rows: 100px repeat(2,1fr);
     background-color: #111827;
     color: #9ca3af;
+    font-size: 1rem;
     grid-column: 1;
     grid-row: 1 / 3;
 }
@@ -55,9 +52,21 @@ svg {
 
 .logo {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 2rem;
+    color: white;
 
 }
+.logo svg {
+    fill: white;
+    height: 75px;
+    width: auto;
+}
 .sidebarContent {
+    padding-top: 20px;
     margin: 20px;
     display: grid;
     border-top: 1px #9ca3af groove;

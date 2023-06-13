@@ -91,7 +91,7 @@ body{
     border-style: none;
     border-radius: 50px;
     font-size: 15px;
-    padding: 20px 30px;
+    padding: 15px 40px;
 }
 .sidebar {
     display: grid;
@@ -140,7 +140,7 @@ body{
 .mainContent {
     display: grid;
     gap: 5px;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     
     background-color: var(--main-content-background);
@@ -150,18 +150,41 @@ body{
 }
 
 .projectsContainer {
-
+    margin-left: 25px;
     grid-column: 1;
     grid-row: span 2;
 }
 
-.announcements {
+.announcementsContainer {
+    margin: 20px;
     grid-column: 2;
     grid-row: 1;
 }
 
-.trending {
+.trendingContainer {
+    margin: 20px;
     grid-column: 2;
     grid-row: 2;
+}
+
+.trending , .announcements {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.trender {
+    display: flex;
+    align-items: center;
+    gap:  10px;
+    line-height: 5px;
+}
+.trender p , .announcements p {
+    color: var(--sidebar-text);
+}
+
+.trender img {
+    height: 50px;
+    border-radius: 100%;
+    width: auto;
 }
 
